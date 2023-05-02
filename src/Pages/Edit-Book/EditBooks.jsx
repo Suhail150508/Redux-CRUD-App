@@ -9,7 +9,7 @@ const EditBooks = () => {
     console.log(location)
     const dispatch = useDispatch()
   
-    const [id]=useState(location.state.id)
+    const [id,]=useState(location.state.id)
     const [title,setTitle]=useState(location.title)
     const [author,setAuthor]=useState(location.author)
     const handleSubmit = (e) =>{
