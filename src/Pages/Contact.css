@@ -1,0 +1,26 @@
+
+
+.login{
+ 
+    background-color: aliceblue;
+    text-align: center;
+}
+form{
+    background-color: cadetblue;
+    text-align: center;
+    gap: 3rem;
+    padding: 4rem 25rem;
+    border-radius: 16px; 
+    margin-left: -29.5rem;
+   
+
+}
+input{
+    margin: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 9px;
+}
+.text-center{
+    /* width: 100vw; */
+}

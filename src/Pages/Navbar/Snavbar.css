@@ -1,0 +1,36 @@
+.nav1{
+
+    position:absolute;
+    height: 270px;
+    width:160px ;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-left: 71rem;
+    padding: 1rem;
+    border-radius: 10px;
+    opacity: 1;
+    transition: 4s;
+    background-color:mediumseagreen;
+    animation: slidenav 1s ease forwards;
+
+}
+.nb{
+border: 1px solid white;
+   color: #DD2; 
+}
+.nb:hover,
+.nb.active{
+    color: #f0e;
+    transition: .9s;
+}
+
+@keyframes slidenav {
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,145 @@
+
+*{
+    font-family: 'Roboto', sans-serif;    
+    margin: 0;
+    padding: 0;
+    outline-offset: none;
+    border: none;
+    /* box-sizing: border-box; */
+    text-transform: capitalize;
+    transition: .4s linear;
+    scroll-behavior: smooth;
+
+}
+
+
+
+
+
+
+.header{
+    display: flex;
+    justify-content:space-between;
+    position: absolute;
+    margin-right: 36.9rem;
+    width: 102%;
+    animation: slideRight .5s ease forwards;
+    margin-top: .2rem;
+
+   
+ 
+}
+li{
+    display: flex;
+    flex-direction: column;
+}
+.header .logo h1{
+    margin:20PX 45px;
+    color: white;
+    animation: slideRightNb 1s;
+}
+.header .logo :hover{
+    transform: rotate(350deg); 
+    transition: 1s;
+    color:fuchsia
+}
+.navbar{
+  margin-top: 1rem;
+ margin-right: 100px;
+
+}
+
+
+.navbar .nblink{
+    position: relative;
+    margin-right: 40px;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color:white;
+    transition: .5s;
+    opacity: 1;
+    animation: slideTop 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+ 
+}
+
+ .nblink:hover,
+ .nblink.active{
+   color: #f0e;
+   padding-bottom: 10px;
+   transition: .9s;
+}
+
+.nav1{
+    animation: slidebottom 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));  
+}
+.imglogo{
+    animation: slideTop 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));  
+}
+
+    
+@keyframes  slideTop  {
+    0%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes slidebottom  {
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+
+
+/* *{
+
+    font-family: 'Roboto', sans-serif;    
+    margin: 0;
+    padding: 0;
+    outline-offset: none;
+    border: none;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all .1s linear;
+    scroll-behavior: smooth;
+
+    }
+ul{
+    
+    display: flex;
+    justify-content: right;
+    gap: 3rem;
+    list-style: none;
+margin: 2rem;
+background-color:darkkhaki
+}
+ul li{
+    color: red;
+    font-size: 1rem;
+}
+a{
+    text-decoration: none;
+}
+.active{
+    background-color:peru;
+    transform:translateX(2px);
+    transition: .1s ;
+    scroll-behavior: smooth;
+  transition:calc(1.2);
+
+}
+
+
+    /* /* initial={{opacity:.3,scale:1.6}} ;
+    animate={{opacity:1}} */
+    
+    /* transition={{layout:{duration: 1,type:"spring"}}} */ 
